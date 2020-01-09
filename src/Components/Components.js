@@ -1,13 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
 import './Components.scss';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './styles.css';
-import {Button, Form, FormGroup, Label, Input, FormText} from 'reactstrap';
-import styled, {css} from 'styled-components';
 
 
-function nasaCard() {
+function NasaCard() {
     const [data, setData] = useState({});
 
         useEffect(() => {
@@ -25,21 +21,9 @@ function nasaCard() {
                 <h4>{data.date}</h4>
                 <img alt = {data.title} src = {data.url} />
                 <p>{data.explanation}</p>
+                <p>{data.copyright}</p>
             </div>
         )
 }
 
-const visitorForm = (props) => {
-    return (
-        <Form>
-            <FormGroup>
-                <Label for = "text">Please enter your opinion of this picture</Label>
-                <Input type = "textarea" name = "text" id = "opinion" />
-            </FormGroup>
-            <Button>Submit</Button>
-        </Form>
-    );
-}
-
-export default nasaCard;
-export default visitorForm;
+export default NasaCard;
