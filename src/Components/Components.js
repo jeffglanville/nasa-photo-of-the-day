@@ -4,6 +4,7 @@ import './Components.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 import {Button, Form, FormGroup, Label, Input, FormText} from 'reactstrap';
+import styled, {css} from 'styled-components';
 
 
 function nasaCard() {
@@ -28,4 +29,17 @@ function nasaCard() {
         )
 }
 
+const visitorForm = (props) => {
+    return (
+        <Form>
+            <FormGroup>
+                <Label for = "text">Please enter your opinion of this picture</Label>
+                <Input type = "textarea" name = "text" id = "opinion" />
+            </FormGroup>
+            <Button>Submit</Button>
+        </Form>
+    );
+}
+
 export default nasaCard;
+export default visitorForm;
