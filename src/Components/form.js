@@ -10,7 +10,7 @@ const Visitor = (props) => {
                 <Input type = "name" name = "name" id = "visitorname" placeholder = "Name" />
             </FormGroup>
             <FormGroup className = "formgroup">
-                <Label for = "select">Select: </Label>
+                <Label for = "select">Rate the Picture </Label>
                 <Input type = "select" id = "select">
                     <option>1 Dislike</option>
                     <option>2 Somewhat Dislike</option>
