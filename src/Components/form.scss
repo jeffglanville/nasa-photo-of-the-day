@@ -1,0 +1,23 @@
+Form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#select {
+    margin-right: 50px;
+}
+
+#visitorname {
+    margin-right: 20px;
+}
+
+button {
+    width: 10%;
+    font-size: 1rem;
+    background-color: #A9FBD7;
+    border-color: blue;
+    border-radius: 10px;
+    margin: 10px;
+}
