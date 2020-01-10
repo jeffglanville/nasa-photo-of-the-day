@@ -17,11 +17,13 @@ function NasaCard() {
 
         return (
             <div className = 'container'>
-                <h1>{data.title}</h1>
-                <h4>{data.date}</h4>
-                <img alt = {data.title} src = {data.url} />
-                <p>{data.explanation}</p>
-                <p>{data.copyright}</p>
+                <section className = "content">
+                    <h1 className = "title">{data.title}</h1>
+                    <h4 className = "date">{data.date}</h4>
+                    <img className = "picture" alt = {data.title} src = {data.url} />
+                    <p className = "description">{data.explanation}</p>
+                    <p className = "copyright">{data.copyright}</p>
+                </section>
             </div>
         )
 }

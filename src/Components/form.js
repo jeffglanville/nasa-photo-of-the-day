@@ -1,14 +1,15 @@
 import React from 'react';
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Form, FormGroup, Label, Input } from 'reactstrap';
+import '../Components/form.scss';
 
 const Visitor = (props) => {
     return (
         <Form>
-            <FormGroup>
+            <FormGroup className = "formgroup">
                 <Label for = "name">Your Name: </Label>
                 <Input type = "name" name = "name" id = "visitorname" placeholder = "Name" />
             </FormGroup>
-            <FormGroup>
+            <FormGroup className = "formgroup">
                 <Label for = "select">Select: </Label>
                 <Input type = "select" id = "select">
                     <option>1 Dislike</option>
